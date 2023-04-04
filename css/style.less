@@ -1,3 +1,69 @@
-body{
-    color: steelblue;
+@dark-Green: teal;
+@light-Green: turquoise;
+@pSize: 10px;
+@mSize: 15px;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: @dark-Green;
+    color: @light-Green;
+    padding: @pSize * 5 0;
+    text-align: center;
+    border-bottom: (@pSize / 3) solid  @light-Green;
+}
+
+main{
+    width: 100%;
+}
+
+main div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main div:nth-child(2){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: @mSize + 8px;
+}
+
+main section{
+    width: 70%;
+    padding: @pSize * 2;
+    text-align: justify;
+    color: darken(@dark-Green, 5%);
+}
+
+main aside{
+    width: 25%;
+    padding: @pSize * 2;
+}
+
+main aside ul li{
+    color: lighten(@dark-Green, 25%);
+}
+
+main img{
+    width: 40%;
+    padding: @pSize * 2;
+}
+
+main p{
+    width: 55%;
+    padding: @pSize * 2;
+    text-align: justify;
+    color: darken(@light-Green, 15%);
+}
+
+footer{
+    padding: @pSize * 3;
+    text-align: center;
+    background-color: @light-Green;
+    color: @dark-Green;
 }
