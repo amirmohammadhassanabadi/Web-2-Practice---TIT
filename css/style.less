@@ -3,6 +3,10 @@
 @pSize: 10px;
 @mSize: 15px;
 
+.border-radius{
+    border-radius: 20px;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -48,7 +52,6 @@ main{
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin-bottom: @mSize + 8px;
         img{
             width: 40%;
             padding: @pSize * 2;
@@ -56,10 +59,77 @@ main{
         
         p{
             width: 55%;
-            padding: @pSize * 2;
+            height: fit-content;
+            padding: (@pSize) (@pSize * 2);
             text-align: justify;
             color: darken(@light-Green, 15%);
+            background-color: seagreen;
+            margin-top: @mSize + 5;
+            margin-right: @mSize;
+            .border-radius;
+        }
+    }
+    div:nth-child(3){
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 40%;
+            padding: @pSize * 2;
+        }
         
+        p{
+            width: 53%;
+            height: fit-content;
+            padding: (@pSize) (@pSize * 2);
+            text-align: justify;
+            color: darken(@light-Green, 15%);
+            background-color: seagreen;
+            margin-top: @mSize + 5;
+            margin-left: @mSize;
+            .border-radius;
+        }
+    }
+    div:nth-child(4){
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 40%;
+            padding: @pSize * 2;
+        }
+        
+        p{
+            width: 53%;
+            height: fit-content;
+            padding: (@pSize) (@pSize * 2);
+            text-align: justify;
+            color: darken(@light-Green, 15%);
+            background-color: seagreen;
+            margin-top: @mSize + 5;
+            .border-radius;
+        }
+    }
+    div:nth-child(5){
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: @mSize;
+        img{
+            width: 40%;
+            padding: @pSize * 2;
+        }
+        
+        p{
+            width: 53%;
+            height: fit-content;
+            padding: (@pSize) (@pSize * 2);
+            text-align: justify;
+            color: darken(@light-Green, 15%);
+            background-color: seagreen;
+            margin-top: @mSize + 5;
+            margin-left: @mSize;
+            .border-radius;
         }
     }
 }
