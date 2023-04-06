@@ -18,47 +18,50 @@ header{
 
 main{
     width: 100%;
-}
-
-main div:nth-child(1){
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-main div:nth-child(2){
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: @mSize + 8px;
-}
-
-main section{
-    width: 70%;
-    padding: @pSize * 2;
-    text-align: justify;
-    color: darken(@dark-Green, 5%);
-}
-
-main aside{
-    width: 25%;
-    padding: @pSize * 2;
-}
-
-main aside ul li{
-    color: lighten(@dark-Green, 25%);
-}
-
-main img{
-    width: 40%;
-    padding: @pSize * 2;
-}
-
-main p{
-    width: 55%;
-    padding: @pSize * 2;
-    text-align: justify;
-    color: darken(@light-Green, 15%);
+    div:nth-child(1){
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        section{
+            width: 70%;
+            padding: @pSize * 2;
+            text-align: justify;
+            color: darken(@dark-Green, 5%);
+        }
+        aside{
+            background-color: darken(@dark-Green, 15%);
+            width: 20%;
+            padding: @pSize (@pSize * 2);
+            margin-right: @mSize;
+            margin-top: @mSize;
+            height: fit-content;
+            ul li{
+                color: lighten(@dark-Green, 15%);
+                cursor: pointer;
+                &:hover{
+                    color: springgreen;
+                }
+            }
+        }
+    }
+    div:nth-child(2){
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: @mSize + 8px;
+        img{
+            width: 40%;
+            padding: @pSize * 2;
+        }
+        
+        p{
+            width: 55%;
+            padding: @pSize * 2;
+            text-align: justify;
+            color: darken(@light-Green, 15%);
+        
+        }
+    }
 }
 
 footer{

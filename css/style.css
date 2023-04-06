@@ -17,30 +17,38 @@ main div:nth-child(1) {
   display: flex;
   justify-content: space-between;
 }
+main div:nth-child(1) section {
+  width: 70%;
+  padding: 20px;
+  text-align: justify;
+  color: #006667;
+}
+main div:nth-child(1) aside {
+  background-color: #003334;
+  width: 20%;
+  padding: 10px 20px;
+  margin-right: 15px;
+  margin-top: 15px;
+  height: fit-content;
+}
+main div:nth-child(1) aside ul li {
+  color: #00cccd;
+  cursor: pointer;
+}
+main div:nth-child(1) aside ul li:hover {
+  color: springgreen;
+}
 main div:nth-child(2) {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 23px;
 }
-main section {
-  width: 70%;
-  padding: 20px;
-  text-align: justify;
-  color: #006667;
-}
-main aside {
-  width: 25%;
-  padding: 20px;
-}
-main aside ul li {
-  color: #00ffff;
-}
-main img {
+main div:nth-child(2) img {
   width: 40%;
   padding: 20px;
 }
-main p {
+main div:nth-child(2) p {
   width: 55%;
   padding: 20px;
   text-align: justify;
