@@ -3,8 +3,18 @@
 @pSize: 10px;
 @mSize: 15px;
 
-.border-radius{
-    border-radius: 20px;
+.border-radius(@radius){
+    border-radius: @radius;
+}
+
+.pos(@width: 100%, @dis: flex, @justify: space-between){
+    width: @width;
+    display: @dis;
+    justify-content: @justify;
+}
+
+.bordered(@width: 2px, @type: solid, @color: #000){
+    border: @arguments;
 }
 
 *{
@@ -23,9 +33,7 @@ header{
 main{
     width: 100%;
     div:nth-child(1){
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        .pos;
         section{
             width: 70%;
             padding: @pSize * 2;
@@ -49,12 +57,13 @@ main{
         }
     }
     div:nth-child(2){
-        width: 100%;
+        .pos;
         display: flex;
         justify-content: space-between;
         img{
             width: 40%;
-            padding: @pSize * 2;
+            margin: @pSize * 2;
+            .bordered;
         }
         
         p{
@@ -62,20 +71,19 @@ main{
             height: fit-content;
             padding: (@pSize) (@pSize * 2);
             text-align: justify;
-            color: darken(@light-Green, 15%);
+            color: whitesmoke;
             background-color: seagreen;
             margin-top: @mSize + 5;
             margin-right: @mSize;
-            .border-radius;
+            .border-radius(20px);
         }
     }
     div:nth-child(3){
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        .pos;
         img{
             width: 40%;
-            padding: @pSize * 2;
+            margin: @pSize * 2;
+            .bordered;
         }
         
         p{
@@ -83,20 +91,19 @@ main{
             height: fit-content;
             padding: (@pSize) (@pSize * 2);
             text-align: justify;
-            color: darken(@light-Green, 15%);
+            color: whitesmoke;
             background-color: seagreen;
             margin-top: @mSize + 5;
             margin-left: @mSize;
-            .border-radius;
+            .border-radius(20px);
         }
     }
     div:nth-child(4){
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        .pos;
         img{
             width: 40%;
-            padding: @pSize * 2;
+            margin: @pSize * 2;
+            .bordered;
         }
         
         p{
@@ -104,20 +111,19 @@ main{
             height: fit-content;
             padding: (@pSize) (@pSize * 2);
             text-align: justify;
-            color: darken(@light-Green, 15%);
+            color: whitesmoke;
             background-color: seagreen;
             margin-top: @mSize + 5;
-            .border-radius;
+            .border-radius(20px);
         }
     }
     div:nth-child(5){
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        .pos;
         margin-bottom: @mSize;
         img{
             width: 40%;
-            padding: @pSize * 2;
+            margin: @pSize * 2;
+            .bordered;
         }
         
         p{
@@ -125,11 +131,11 @@ main{
             height: fit-content;
             padding: (@pSize) (@pSize * 2);
             text-align: justify;
-            color: darken(@light-Green, 15%);
+            color: whitesmoke;
             background-color: seagreen;
             margin-top: @mSize + 5;
             margin-left: @mSize;
-            .border-radius;
+            .border-radius(20px);
         }
     }
 }
@@ -139,4 +145,5 @@ footer{
     text-align: center;
     background-color: @light-Green;
     color: @dark-Green;
+    border-top: 2px solid (@dark-Green);
 }
