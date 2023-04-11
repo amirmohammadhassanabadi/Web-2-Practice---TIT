@@ -6,8 +6,13 @@ header {
 }
 
 main {
-  background-color: whitesmoke;
-  padding: 10px 0;
+  padding: 15px 0;
+}
+
+main>div>aside>ul{
+  background-color: thistle;
+  padding: 15px 30px;
+  color: rebeccapurple;
 }
 
 main>article{
