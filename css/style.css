@@ -1,4 +1,13 @@
+/* body{
+    background-color: rgb(34, 34, 34);
+} */
+
 .wrapper{
     margin-top: 20px;
     text-align: center;
+}
+
+.wrapper>div{
+    padding: 10px 0;
+    width: 80%;
 }
