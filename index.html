@@ -11,15 +11,49 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="wrapper">
-                    <img src="./img/1321021046.jpg" alt="" class="img-responsive col-lg-6">
-                    <img src="./img/spirit-of-ecstasy-rolls-royce-5k-8k-2880x1800-4526.jpg" alt="" class="img-responsive col-lg-6 img-rounded">
-                    <img src="./img/desktop-wallpaper-black-rose-background-black-rose-3d.jpg" alt="" class="img-responsive img-circle col-lg-6">
-                    <img src="./img/groot.jpg" alt="" class="img-responsive img-thumbnail col-lg-6">
+    <header class="container-fluid text-center">
+        <h1>
+            Using Bootstrap 3.4 <span class="glyphicon glyphicon-cog"></span>
+        </h1>
+    </header>
+    <main class="container">
+        <div class="row">
+            <article class="col-4">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <div class="dropup">
+                    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropup
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+            </article>
+            <article class="col-4"></article>
+            <article class="col-4"></article>
+            <article class="col-4"></article>
+            <article class="col-4"></article>
+            <article class="col-4"></article>
         </div>
-    </div>
-
+    </main>
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
