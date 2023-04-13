@@ -19,3 +19,7 @@ main>.row{
 .dropup, .dropdown{
     display: inline-block;
 }
+
+.btn-group-justified{
+    margin-top: 20px;
+}
