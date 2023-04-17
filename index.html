@@ -11,100 +11,129 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="./img/aave-aave-logo.png" alt="" class="img-logo">
+                </div>
 
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="text-danger"><a href="#" class="selec">A Simple Selection </a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div>
+            <h1>
+                Bootstrap 3.4
+            </h1>
+        </div>
+    </header>
     <main class="container">
-        <nav aria-label="Page navigation">
-            <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
+        <div class="row">
+            <ul class="nav nav-pills nav-stacked bg-info col-lg-2">
+                <li><a>Lorem, ipsum.</a></li>
+                <li><a>Dolorem, ratione.</a></li>
+                <li><a>Excepturi, molestiae?</a></li>
+                <li><a>A, earum?</a></li>
+                <li><a>Autem, aliquam.</a></li>
+                <li><a>Commodi, ad?</a></li>
+                <li><a>Rem, delectus.</a></li>
             </ul>
-        </nav>
-        <hr>
-        <nav aria-label="...">
-            <ul class="pagination pagination-lg">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <nav aria-label="...">
-            <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <nav aria-label="...">
-            <ul class="pagination pagination-sm">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <hr>
-        <nav aria-label="...">
-            <ul class="pager">
-                <li><a href="#">Previous</a></li>
-                <li><a href="#">Next</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <nav aria-label="...">
-            <ul class="pager">
-                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-                <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-            </ul>
-        </nav>
+            <div class="col-lg-10">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt at fugiat eius dicta ipsum optio
+                    laboriosam rerum? Assumenda amet nihil iusto nulla inventore sunt dignissimos obcaecati magni ullam
+                    reiciendis non harum fuga esse, incidunt beatae porro, qui ipsam laborum consequatur eum repellat,
+                    explicabo
+                    doloremque. Recusandae voluptatum accusamus illo! Dolore non minus facilis deserunt libero,
+                    aspernatur
+                    velit
+                    quia ipsa enim nemo! Libero rem alias labore quas unde iusto nisi aut nostrum voluptatibus magnam
+                    temporibus, excepturi atque sed dolor corrupti. Assumenda tenetur iste repellendus quibusdam. Eaque
+                    soluta
+                    debitis cupiditate animi saepe placeat alias atque aliquid nam, quia necessitatibus consequatur
+                    provident
+                    tempora corporis blanditiis quis quas architecto unde. Obcaecati animi consectetur neque ut
+                    voluptates,
+                    nesciunt dolorum alias suscipit veniam? Nam dolorum veniam nihil iusto facilis expedita, sapiente
+                    doloribus
+                    a? Obcaecati animi sit, nesciunt itaque totam explicabo quibusdam eaque sapiente neque saepe
+                    consectetur?
+                    Dicta voluptatem aliquam architecto, autem quia ipsum magnam veniam repudiandae. Dolore nulla
+                    laboriosam,
+                    quisquam doloremque sit eligendi reprehenderit tempore quo cupiditate magnam saepe harum! Natus
+                    quibusdam
+                    quam nam amet hic! Unde nisi sit consectetur repudiandae optio dolor ullam sapiente et fuga,
+                    temporibus
+                    aliquam perspiciatis voluptates voluptatem odio illum accusamus quia, cupiditate, vero aliquid
+                    veniam
+                    velit!
+                    Ipsa reiciendis necessitatibus numquam? Fugit, soluta? quam nam amet hic! Unde nisi sit consectetur
+                    repudiandae
+                    optio dolor ullam sapiente et fuga, temporibusaliquam perspiciatis voluptates voluptatem odio illum
+                    accusamus quia,
+                    cupiditate, vero aliquid veniam velit! Ipsa reiciendis necessitatibus numquam? Fugit, soluta.
+                    optio dolor ullam sapiente et fuga, temporibusaliquam perspiciatis voluptates voluptatem odio illum
+                    accusamus quia,
+                    cupiditate, vero aliquid veniam velit! Ipsa reiciendis necessitatibus numquam? Fugit, soluta.
+                </p>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        All rights are reserved by <b>AmirHA</b>
+    </footer>
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
