@@ -52,12 +52,17 @@ main p {
     text-align: justify;
 }
 
-footer {
-    padding-top: 2px;
-    background-image: linear-gradient(225deg, rgba(176, 84, 160, 1) 0%, rgba(55, 178, 195, 1) 100%);
+div.col-xs-12>div>img {
+    opacity: 60%;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
 }
 
-footer>div {
+div.col-xs-12>div>img:hover {
+    opacity: 100%;
+}
+
+footer {
     background-color: #222222;
     padding: 20px 0;
     text-align: center;
