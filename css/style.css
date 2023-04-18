@@ -17,6 +17,7 @@ header>div {
     background-image: linear-gradient(225deg, rgba(176, 84, 160, 1) 0%, rgba(55, 178, 195, 1) 100%);
     text-align: center;
     padding: 70px 0;
+    border-bottom: 2px solid #000;
 }
 
 header>div>h1 {
@@ -42,11 +43,21 @@ main>div>ul>li>a:hover {
     color: whitesmoke !important;
 }
 
+
+div.col-xs-12>.btn {
+    margin-bottom: 10px;
+}
+
 main p {
     text-align: justify;
 }
 
 footer {
+    padding-top: 2px;
+    background-image: linear-gradient(225deg, rgba(176, 84, 160, 1) 0%, rgba(55, 178, 195, 1) 100%);
+}
+
+footer>div {
     background-color: #222222;
     padding: 20px 0;
     text-align: center;

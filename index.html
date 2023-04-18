@@ -80,7 +80,7 @@
     </header>
     <main class="container">
         <div class="row">
-            <ul class="nav nav-pills nav-stacked bg-info col-lg-2">
+            <ul class="nav nav-pills nav-stacked bg-info col-xs-12 col-md-2">
                 <li><a>Lorem, ipsum.</a></li>
                 <li><a>Dolorem, ratione.</a></li>
                 <li><a>Excepturi, molestiae?</a></li>
@@ -89,7 +89,8 @@
                 <li><a>Commodi, ad?</a></li>
                 <li><a>Rem, delectus.</a></li>
             </ul>
-            <div class="col-lg-10">
+            <div class="col-xs-12 col-md-10">
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#regModal">Show Modal</button>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt at fugiat eius dicta ipsum optio
                     laboriosam rerum? Assumenda amet nihil iusto nulla inventore sunt dignissimos obcaecati magni ullam
@@ -127,70 +128,39 @@
                     accusamus quia,
                     cupiditate, vero aliquid veniam velit! Ipsa reiciendis necessitatibus numquam? Fugit, soluta.
                 </p>
-                <hr>
-                <div class="col-sm-12">
-                    <ul class="nav nav-tabs col-sm-12">
-                        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-                        <li><a href="#about" data-toggle="tab">About</a></li>
-                        <li><a href="#products" data-toggle="tab">Products</a></li>
-                        <li><a href="#services" data-toggle="tab">Services</a></li>
-                    </ul>
-
-                    <div class="tab-content">
-                        <div class="tab-pane fade-in active" id="home">
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, voluptatibus
-                                necessitatibus saepe quidem praesentium tempora sunt est nihil facilis omnis ipsam
-                                maxime provident, autem odio nemo aspernatur consectetur quisquam hic aperiam impedit.
-                                Officiis corporis harum temporibus autem inventore laboriosam eligendi.
-                            </p>
-                        </div>
-                        <div class="tab-pane fade" id="about">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nam recusandae
-                                fugit provident asperiores. Cumque at, quidem debitis aspernatur reprehenderit repellat
-                                fugiat accusantium sapiente incidunt quaerat itaque, voluptas eius accusamus quod
-                                blanditiis possimus animi ad expedita. Natus facilis laudantium at ipsam, amet sit sequi
-                                corrupti et in soluta, recusandae quaerat.
-                            </p>
-                        </div>
-                        <div class="tab-pane fade" id="products">
-                            <p>
-                                tempore quisquam perferendis ducimus hic error repellat! Et perspiciatis magnam unde
-                                adipisci nesciunt laborum nemo rem quia harum voluptatibus accusamus molestiae aperiam
-                                id exercitationem, dolorem saepe rerum natus dolor omnis modi numquam repellendus quas
-                                quasi? Repellendus velit, repudiandae facere exercitationem inventore non nobis nostrum
-                                voluptas deleniti, ipsum sed optio neque soluta deserunt perspiciatis debitis suscipit
-                                incidunt quam maiores reiciendis dolor quia eveniet blanditiis ipsam. Adipisci
-                                voluptatem hic aliquid tenetur repellat eaque ullam laudantium, quibusdam debitis quas
-                                et ex accusamus pariatur ipsa ab tempore exercitationem nobis? Ipsa illum hic, corporis
-                            </p>
-                        </div>
-                        <div class="tab-pane fade" id="services">
-                            <p>
-                                sunt in quis! Maxime, deleniti dolor ipsum reiciendis eligendi vero doloribus magnam
-                                rem! Aliquid libero earum alias, enim laudantium distinctio molestiae recusandae sed
-                                debitis hic ea. Amet assumenda maxime saepe, et omnis animi labore magnam in totam.
-                                Natus veritatis repellat, mollitia expedita nemo quidem ipsa, impedit eaque odit
-                                deleniti assumenda aspernatur ad, facere commodi! Adipisci iste commodi porro nulla,
-                                reiciendis odio facere nisi expedita architecto iusto ratione dolores, officia vero
-                                consectetur totam asperiores reprehenderit! Debitis velit laudantium animi voluptas hic
-                                ut non quis quae consequuntur ab, impedit sed ipsum eos, dolore ipsam consectetur
-                                eligendi nihil repellat dicta quaerat neque corporis cumque!
-                            </p>
-                            <h4>
-                                Lorem ipsum dolor sit.
-                            </h4>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </main>
 
     <footer>
-        All rights are reserved by <b>AmirHA</b>
+        <div>
+            All rights are reserved by <b>AmirHA</b>
+        </div>
     </footer>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="regModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            First Name: <input type="text" class="form-control">
+                            last Name: <input type="text" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
