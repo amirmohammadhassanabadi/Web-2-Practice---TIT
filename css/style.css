@@ -1,42 +1,7 @@
-body {
-    background-color: gray;
+header{
+    padding: 80px 0;
 }
 
-section {
-    background-color: rgb(46, 46, 46);
-    height: 400px;
-    padding: 10px;
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    align-items: center;
-    /* align-content: center; */
-}
-
-section>div {
-    background-color: rgb(255, 200, 0);
-    color: rgb(46, 46, 46);
-    /* width: 200px; */
-    /* height: 30px; */
-    padding: 20px;
-    margin: 5px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-}
-
-section>div:nth-child(2){
-    background-color: tomato;
-    /* order: 3; */
-    align-self: flex-start;
-}
-
-section>div:nth-child(4){
-    background-color: antiquewhite;
-    /* order: 2; */
-    align-self: stretch;
-}
-
-section>div:hover{
-    align-self: stretch;
+footer{
+    padding: 30px 0;
 }
