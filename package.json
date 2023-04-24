@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.4.1",
-    "jquery": "^1.12.4"
+    "bootstrap": "^4.6.2",
+    "jquery": "^3.5.1"
   }
 }
