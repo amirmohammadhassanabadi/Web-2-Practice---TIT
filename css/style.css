@@ -1,8 +1,3 @@
-.navbar-brand>img{
-    width: 40px;
-    height: auto;
-}
-
-header>nav{
-    border-bottom: 1px solid #007BFF;
+.w-100{
+    border-bottom: 2px solid #f1b709;
 }
