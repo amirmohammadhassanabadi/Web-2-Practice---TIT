@@ -11,49 +11,73 @@
 </head>
 
 <body>
-    <header class="bg-dark text-warning text-center">
-        <h1>
-            Using Bootstrap 4
-        </h1>
-    </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <main class="container bg-secondary">
-        <section class="pt-2">
-            <div class="row justify-content-between align-items-center">
-                <article class="col-3 align-self-start">
-                    <img src="./img/2.jpg" alt="" class="img-fluid">
-                    <h2>
-                        Molestiae.
-                    </h2>
-                    <p>Alias facere ea vero voluptatem! Assumenda commodi ad eaque harum quidem. Fuga esse alias
-                        quisquam</p>
-                </article>
-                <article class="col-3">
-                    <img src="./img/3.jpg" alt="" class="img-fluid">
-                    <h2>
-                        Eaperst
-                    </h2>
-                    <p>Sapiente laborum necessitatibus, provident voluptatem adipisci repellat doloribus accusamus
-                        quisquam minus error qui incidunt alias</p>
-                </article>
-                <article class="col-3 align-self-end">
-                    <img src="./img/4.jpeg" alt="" class="img-fluid">
-                    <h2>
-                        Corporis?
-                    </h2>
-                    <p>Maxime omnis impedit, fugiat pariatur repellat autem, veniam ea corporis doloremque possimus
-                        asperiores, libero eligendi</p>
-                </article>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
             </div>
-        </section>
-    </main>
+        </nav>
 
-    <footer class="bg-warning text-dark text-center py-5">
-        <h5>
-            All rights are reserved &copy; by AmirHA
-            </h3>
-    </footer>
-
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/c1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/c2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/c3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/c4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/c5.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </header>
 
 
 
